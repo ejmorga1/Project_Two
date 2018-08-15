@@ -2,53 +2,55 @@ var db = require("../models");
 
 module.exports = function (app) {
 
+    /*
     app.get("/api/posts", function (req, res) {
         var query = {};
-        if (req.query.author_id) {
-            query.UserId = req.query.author_id;
+        if (req.query.id) {
+            query.userId = req.query.id;
         }
-        db.User.findAll({
+        db.users.findAll({
             where: query,
-            include: [db.User]
-        }).then(function (dbUser) {
-            res.json(dbUser)
+            include: [db.user]
+        }).then(function (dbuser) {
+            res.json(dbuser)
         });
     });
 
     app.get("/api/posts/:id", function (req, res) {
-        db.User.findOne({
+        db.users.findOne({
             where: {
                 id: req.params.id
             },
-            include: [db.User]
-        }).then(function (dbUser) {
-            res.json(dbUser);
+            include: [db.user]
+        }).then(function (dbuser) {
+            res.json(dbuser);
         });
     });
 
     app.post("/api/posts", function (req, res) {
-        db.User.create(req.body).then(function (dbUser) {
-            res.json(dbUser);
+        db.users.create(req.body).then(function (dbuser) {
+            res.json(dbuser);
         });
     });
 
     app.delete("/api/posts/:id", function (req, res) {
-        db.User.destroy({
+        db.users.destroy({
             where: {
                 id: req.params.id
             }
-        }).then(function (dbUser) {
-            res.json(dbUser);
+        }).then(function (dbuser) {
+            res.json(dbuser);
         });
     });
 
     app.put("/api/users/:id/:info", function (req, res) {
-        db.User.update(req.body, {
+        db.users.update(req.body, {
             where: {
                 id: req.body.id
             }
-        }).then(function (dbUser) {
-            res.json(dbUser);
+        }).then(function (dbuser) {
+            res.json(dbuser);
         });
     });
+    */
 };

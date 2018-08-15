@@ -2,37 +2,39 @@ var db = require("../models");
 
 module.exports = function(app) {
 
+  /*
   app.get("/api/users", function(req, res) {
-    db.Example.findAll({}).then(function(dbExample) {
-      res.json(dbExample);
+    db.users.findAll({}).then(function(dbuser) {
+      res.json(dbuser);
     });
   });
 
   app.get("/api/users/:id", function(req, res) {
-    db.Example.findOne({
+    db.users.findOne({
       where: {
         id: req.params.id
       },
-      include: [db.User]
-    }).then(function(dbExample) {
-      res.json(dbExample);
+      include: [db.user]
+    }).then(function(dbuser) {
+      res.json(dbuser);
     });
   });
 
   app.post("/api/users", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+    db.users.create(req.body).then(function(dbuser) {
+      res.json(dbuser);
     });
   });
 
   app.delete("/api/users/:id", function(req, res) {
-    db.Example.destroy({
+    db.users.destroy({
       where: {
         id: req.params.id
       }
-    }).then(function(dbExample) {
-      res.json(dbExample);
+    }).then(function(dbuser) {
+      res.json(dbuser);
     });
   });
+  */
 
 };
