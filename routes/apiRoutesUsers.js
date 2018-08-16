@@ -2,7 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
 
-  /*
+  
   app.get("/api/users", function(req, res) {
     db.users.findAll({}).then(function(dbuser) {
       res.json(dbuser);
@@ -35,6 +35,6 @@ module.exports = function(app) {
       res.json(dbuser);
     });
   });
-  */
+  
 
 };
